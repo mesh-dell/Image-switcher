@@ -8,15 +8,18 @@
 
     <ImageView
         android:layout_width="350dp"
-        android:layout_height="350dp"
-        android:src="@color/black"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/img1"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnPrev"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Previous"
@@ -25,6 +28,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
+        android:id="@+id/btnNext"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="40dp"
